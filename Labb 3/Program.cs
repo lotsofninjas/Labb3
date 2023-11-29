@@ -9,16 +9,17 @@ namespace Labb_3
     {
         private static void Main(string[] args)
         {
-            Person person = new Person();
+            Person person = new Person(
+                new DateTime(1986, 06, 19),
+                "Blueish",
+                GenderInfo.Gender.Male,
+                new HairInfo.Hair
+                {
+                    HairColor = "Brown",
+                    HairLength = 1
+                });
 
-            person.DateOfBirth = new DateTime(1986, 06, 19);
-            person.EyeColor = "Blueish";
-            person.Gender = GenderInfo.Gender.Male;
-            person.Hair = new HairInfo.Hair
-            {
-                HairColor = "Brown",
-                HairLength = 1
-            };
+
 
             Console.WriteLine(person.ToString());
             Console.ReadLine();
