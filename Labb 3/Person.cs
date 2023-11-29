@@ -10,8 +10,8 @@ namespace Labb_3
     {
         public DateTime DateOfBirth { get; set; }
         public string EyeColor { get; set; }
-        public GenderInfo Gender { get; set; }
-        public HairInfo Hair { get; set; }
+        public GenderInfo.Gender Gender { get; set; }
+        public HairInfo.Hair Hair { get; set; }
         
     }
 }
