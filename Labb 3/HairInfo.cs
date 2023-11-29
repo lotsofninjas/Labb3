@@ -11,7 +11,7 @@ namespace Labb_3
         public struct Hair
         {
             public string HairColor { get; set; }
-            public int HairLength { get; set; }
+            public double HairLength { get; set; }
 
         }
     }

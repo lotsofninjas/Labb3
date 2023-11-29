@@ -9,15 +9,15 @@ namespace Labb_3
     {
         private static void Main(string[] args)
         {
-            Person person = new Person(
-                new DateTime(1986, 06, 19),
-                "Blueish",
-                GenderInfo.Gender.Male,
-                new HairInfo.Hair
-                {
-                    HairColor = "Brown",
-                    HairLength = 1
-                });
+            DateTime dateOfBirth = new DateTime(1986, 06, 19);
+            string eyeColor = "Blueish";
+            GenderInfo.Gender gender = GenderInfo.Gender.Male;
+            HairInfo.Hair hair = new HairInfo.Hair
+            {
+                HairColor = "Brown",
+                HairLength = 0.5
+            };
+            Person person = new Person(dateOfBirth, eyeColor, gender, hair);
 
 
 
