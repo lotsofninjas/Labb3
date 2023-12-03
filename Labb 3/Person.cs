@@ -9,16 +9,16 @@ namespace Labb_3
 {
     public class Person
     {
-        public DateTime DateOfBirth { get; set; }
-        public string EyeColor { get; set; }
-        public GenderInfo.Gender Gender { get; set; }
-        public HairInfo.Hair Hair { get; set; }
+        private DateTime DateOfBirth { get; }
+        private string EyeColor { get; }
+        private Gender Gender { get; }
+        private Hair Hair { get; }
 
-        public Person(DateTime dateOfBirth, string eyeColor, GenderInfo.Gender genderInfo, HairInfo .Hair hair) 
+        public Person(DateTime dateOfBirth, string eyeColor, Gender gender, Hair hair) 
         { 
             DateOfBirth = dateOfBirth;
             EyeColor = eyeColor;
-            Gender = genderInfo;
+            Gender = gender;
             Hair = hair;
         }
 

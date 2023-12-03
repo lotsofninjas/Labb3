@@ -11,17 +11,16 @@ namespace Labb_3
         {
             DateTime dateOfBirth = new DateTime(1986, 06, 19);
             string eyeColor = "Blueish";
-            GenderInfo.Gender gender = GenderInfo.Gender.Male;
-            HairInfo.Hair hair = new HairInfo.Hair
+            Gender gender = Gender.Male;
+            Hair hair = new Hair
             {
                 HairColor = "Brown",
                 HairLength = 0.5
             };
+            
             Person person = new Person(dateOfBirth, eyeColor, gender, hair);
 
-
-
-            Console.WriteLine(person.ToString());
+            Console.WriteLine(person);
             Console.ReadLine();
         }
     }

@@ -6,13 +6,10 @@ using System.Threading.Tasks;
 
 namespace Labb_3
 {
-    public class GenderInfo
+    public struct Hair
     {
-        public enum Gender
-        {
-            Male,
-            Female,
-            Other
-        }
+        public string HairColor { get; set; }
+        public double HairLength { get; set; }
+
     }
 }
